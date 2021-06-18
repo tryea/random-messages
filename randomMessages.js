@@ -10,3 +10,10 @@ const notBoringQuestion = [
     "What's your favorite ice cream topping?",
     'What was the last TV show you binge-watched?'
 ];
+
+const getRandomMessage = (arr) => {
+    index = Math.floor(Math.random() * arr.length);
+    return arr[index];
+}
+
+console.log(getRandomMessage(notBoringQuestion))
